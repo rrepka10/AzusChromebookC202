@@ -41,3 +41,11 @@ options snd_hda_intel power_save=0
 options snd-hda-intel power_save_controller=N
 options snd_sof sof_debug=1
 ```
+Other suggestions: 
+
+Disable and remove the swap file - saves 2GB
+
+Install a SD card and format it as EXT4
+
+Use the symbolic link command ```ln -s targetDir link``` in your home to move data like "Downloads" to the SD card
+saving more primary disk space
