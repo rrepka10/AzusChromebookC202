@@ -31,3 +31,13 @@ Hit <Esc>  for boot menu
 Insert your Ubuntu USB
 Follow installation instructions.
 Select minimal GUI install, do not include open office.
+
+There is an issue with the audio driver in Ubuntu, make the following changes to fix a high pitch whine 
+after about 5 minutes of playing music or video.  Add the following lines to the end of the conf file.
+
+```
+sudo vi  /etc/modprobe.d/alsa-base.conf
+options snd_hda_intel power_save=0
+options snd-hda-intel power_save_controller=N
+options snd_sof sof_debug=1
+```
