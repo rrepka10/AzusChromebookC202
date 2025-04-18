@@ -41,11 +41,28 @@ options snd_hda_intel power_save=0
 options snd-hda-intel power_save_controller=N
 options snd_sof sof_debug=1
 ```
-Other suggestions: 
 
-Disable and remove the swap file - saves 2GB
+Install screen brightness key binding controls with:
+```
+sudo apt install light
+sudo chmod +s $(which light)
+```
+
+The use the Ubuntu config screen to set custom key bindings with:
+
+light up :  light -A 20
+
+light down: light -U 20 
+
+Use the audio bindings to bind the volume up/down 
+
+Other suggestions: 
 
 Install a SD card and format it as EXT4
 
+Disable and remove the swap file - saves 2GB or move it to the SD card
+
 Use the symbolic link command ```ln -s targetDir link``` in your home to move data like "Downloads" to the SD card
 saving more primary disk space
+
+Use the 
