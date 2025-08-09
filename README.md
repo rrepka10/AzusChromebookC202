@@ -65,4 +65,4 @@ Disable and remove the swap file - saves 2GB or move it to the SD card
 Use the symbolic link command ```ln -s targetDir link``` in your home to move data like "Downloads" to the SD card
 saving more primary disk space
 
-Use the 
+
